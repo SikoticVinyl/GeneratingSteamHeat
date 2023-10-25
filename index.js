@@ -18,8 +18,18 @@ const questions = [
     },
     {
       type: "input",
-      name: "table of contents",
-      message: "placeholder",
+      name: "username",
+      message: "What is your github username?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email?",
+    },
+    {
+      type: "input",
+      name: "contactMe",
+      message: "Provide instructions for someone to reach you with additional questions:",
     },
     {
       type: "input",
@@ -31,7 +41,32 @@ const questions = [
       name: "usage",
       message: "Provide instructions and examples for use:",
     },
-
+    {
+      type: "list",
+      name: "license",
+      message: "Which license are you using?",
+      choices: [
+        "MIT License",
+        "Apache License 2.0",
+        "GNU General Public License v3.0 (GPL-3.0)",
+        "BSD 2-Clause 'Simplified' License",
+        "BSD 3-Clause 'New' or 'Revised' License",
+        "Mozilla Public License 2.0 (MPL-2.0)",
+        "GNU Lesser General Public License v3.0 (LGPL-3.0)",
+        "Eclipse Public License 2.0",
+        "Creative Commons Zero v1.0 Universal (CC0-1.0)",
+      ]
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "What are the contribution guidelines for your project?",
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "Provide info on how to run tests for your project:"
+    },
 ]
 
 //Function to write README file
