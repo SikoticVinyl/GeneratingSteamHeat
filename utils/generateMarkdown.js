@@ -1,6 +1,6 @@
 // If license returns a license badge, if there is no license, returns an empty string
 function renderLicenseBadge(license) {
-  if (license) {
+  if (license && license !== "No License") {
     return `![License](https://img.shields.io/badge/License-${license.replace(/ /g, '%20')}-blue.svg)`;
   }
   return "";
@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
 
 // If license then returns a license link, if there is no license, returns an empty string
 function renderLicenseLink(license) {
-  if (license) {
+  if (license && license !== "No License") {
     return `[License Information](https://choosealicense.com/licenses/${license.toLowerCase()})`;
   }
   return "";
@@ -16,7 +16,7 @@ function renderLicenseLink(license) {
 
 // if license, returns license section, if there is no license, returns an empty string
 function renderLicenseSection(license) {
-  if (license) {
+  if (license && license !== "No License") {
     return `## License
 
 This project is licensed under the ${license} License. See the ${renderLicenseLink(license)} for details.`;
