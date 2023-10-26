@@ -28,6 +28,9 @@ This project is licensed under the ${license} License. See the ${renderLicenseLi
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseSection = renderLicenseSection(data.license);
+  const hasLicense = data.license && data.license !== "No License";
+
+  const licenseTOC = hasLicense ? '- [License](#license)' : '';
 
   return `# ${data.title}
 
@@ -39,7 +42,7 @@ ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+${licenseTOC}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
