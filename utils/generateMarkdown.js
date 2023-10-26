@@ -33,7 +33,6 @@ function generateMarkdown(data) {
   const licenseTOC = hasLicense ? '- [License](#license)' : '';
 
   return `# ${data.title}
-
 ${licenseBadge}
 
 ## Description
@@ -42,10 +41,10 @@ ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-${licenseTOC}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+${licenseTOC}
 
 ## Installation
 ${data.installation}
