@@ -46,6 +46,7 @@ const questions = [
       name: "license",
       message: "Which license are you using?",
       choices: [
+        "No License",
         "MIT License",
         "Apache License 2.0",
         "GNU General Public License v3.0 (GPL-3.0)",
@@ -55,7 +56,8 @@ const questions = [
         "GNU Lesser General Public License v3.0 (LGPL-3.0)",
         "Eclipse Public License 2.0",
         "Creative Commons Zero v1.0 Universal (CC0-1.0)",
-      ]
+      ],
+      pageSize: 10,
     },
     {
       type: "input",
