@@ -42,7 +42,7 @@ const questions = [
       message: "Provide instructions and examples for use:",
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "license",
       message: "Which license are you using?",
       choices: [
